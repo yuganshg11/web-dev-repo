@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #27343a;
+  background: #f5f7f8;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: white;
+}
+
+.logo {
+  color: #234d57;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 24px;
+}
+
+nav a {
+  color: #42545a;
+  text-decoration: none;
+}
+
+.intro {
+  padding: 55px 8%;
+  background: #dcebea;
+}
+
+.intro h1 {
+  margin: 5px 0;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+}
+
+.small-title {
+  color: #27736c;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  padding: 45px 8%;
+}
+
+.card {
+  flex: 1 1 240px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 5px 18px rgba(25, 50, 55, 0.08);
+}
+
+.card-top {
+  display: flex;
+  align-items: center;
+  height: 145px;
+  padding: 25px;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.one {
+  background: #557c83;
+}
+
+.two {
+  background: #9a795c;
+}
+
+.three {
+  background: #647c67;
+}
+
+.card-body {
+  padding: 18px 22px;
+}
+
+.card-body h2 {
+  margin-top: 0;
+}
+
+footer {
+  padding: 25px;
+  text-align: center;
+  color: #607176;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .card-grid {
+    padding: 28px 6%;
+  }
+}
