@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Card Grid</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="#">Field Notes</a>
+    <nav aria-label="Main navigation">
+      <a href="#places">Places</a>
+      <a href="#stories">Stories</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p class="small-title">A few ideas</p>
+      <h1>Explore the collection</h1>
+      <p>A flexible card layout that adjusts when the screen gets smaller.</p>
+    </section>
+
+    <section class="card-grid" id="places">
+      <article class="card">
+        <div class="card-top one">01</div>
+        <div class="card-body"><h2>Travel</h2><p>Notes and photos from places worth exploring.</p></div>
+      </article>
+      <article class="card">
+        <div class="card-top two">02</div>
+        <div class="card-body"><h2>Design</h2><p>Ideas about layouts, colour and simple interfaces.</p></div>
+      </article>
+      <article class="card">
+        <div class="card-top three">03</div>
+        <div class="card-body"><h2>Learning</h2><p>Small lessons picked up while building projects.</p></div>
+      </article>
+    </section>
+
+    <footer id="contact">Made for a Flexbox layout exercise.</footer>
+  </main>
+</body>
+</html>
