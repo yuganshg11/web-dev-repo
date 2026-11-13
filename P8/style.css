@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #333;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #263b5e;
+    color: white;
+    padding: 12px 6%;
+}
+
+.navbar h2 {
+    margin: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+}
+
+.navbar a:hover {
+    color: #f0c36d;
+}
+
+.hero {
+    text-align: center;
+    background: #dce6f3;
+    padding: 70px 15px;
+}
+
+.content {
+    max-width: 850px;
+    margin: 25px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+}
+
+.project-card {
+    position: relative;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.project-card img {
+    display: block;
+    width: 100%;
+}
+
+.card-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 18px;
+    color: white;
+    background: rgba(20, 35, 55, 0.85);
+}
