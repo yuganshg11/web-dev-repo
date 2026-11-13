@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<head>
+
+    <title>Portfolio Header and Footer</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 20px 50px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #93c5fd;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #93c5fd;
+        }
+
+        .contact {
+            display: flex;
+            gap: 15px;
+        }
+
+        .contact a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            flex: 1;
+
+            max-width: 1000px;
+            width: 90%;
+            margin: auto;
+            padding: 70px 20px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .portfolio-content {
+            text-align: center;
+        }
+
+        .portfolio-content h1 {
+            font-size: 42px;
+            color: #1e3a8a;
+            margin-bottom: 15px;
+        }
+
+        .portfolio-content p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #2563eb;
+            color: white;
+            text-decoration: none;
+
+            padding: 12px 25px;
+            border-radius: 6px;
+        }
+
+        .btn:hover {
+            background-color: #1e40af;
+        }
+
+        footer {
+            background-color: #111827;
+            color: white;
+
+            padding: 25px 50px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-info p {
+            margin: 5px 0;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .social-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            color: #60a5fa;
+        }
+
+        @media (max-width: 700px) {
+
+            header {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .contact {
+                justify-content: center;
+            }
+
+            .portfolio-content h1 {
+                font-size: 32px;
+            }
+
+            footer {
+                flex-direction: column;
+                text-align: center;
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            My<span>Portfolio</span>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="contact">
+            <a href="mailto:example@gmail.com">Email</a>
+            <a href="tel:+911234567890">Call</a>
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <div class="portfolio-content">
+
+            <h1>Hello, I'm a Web Developer</h1>
+
+            <p>
+                Welcome to my portfolio. I create modern,
+                responsive and user-friendly websites using
+                HTML, CSS and JavaScript.
+            </p>
+
+            <a href="#" class="btn">View My Projects</a>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-info">
+            <p><strong>My Portfolio</strong></p>
+            <p>Email: yuggupta1990@gmail.com</p>
+        </div>
+
+        <div class="social-links">
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+        </div>
+
+        <div>
+            <p>©️ 2026 My Portfolio</p>
+        </div>
+
+    </footer>
+
+</body>
+</html>
