@@ -1,0 +1,81 @@
+/* Design tokens: common values are stored as variables */
+:root {
+    --primary-color: #263b5e;
+    --secondary-color: #f0c36d;
+    --background-color: #f4f6f8;
+    --text-color: #333333;
+    --font-main: Arial, sans-serif;
+    --small-space: 10px;
+    --medium-space: 20px;
+    --large-space: 35px;
+    --card-radius: 10px;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-main);
+    color: var(--text-color);
+    background: var(--background-color);
+    line-height: 1.6;
+}
+
+.site-header {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: var(--large-space);
+}
+
+.container {
+    width: 85%;
+    max-width: 850px;
+    margin: var(--large-space) auto;
+}
+
+.intro, .skills {
+    background: white;
+    padding: var(--medium-space);
+    margin-bottom: var(--medium-space);
+    border-radius: var(--card-radius);
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 26px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.button {
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    padding: var(--small-space) var(--medium-space);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background: #17263e;
+}
+
+.skill-list {
+    display: flex;
+    gap: var(--small-space);
+    flex-wrap: wrap;
+}
+
+.skill-list span {
+    background: var(--secondary-color);
+    padding: var(--small-space) var(--medium-space);
+    border-radius: 5px;
+}
+
+footer {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: var(--medium-space);
+}
