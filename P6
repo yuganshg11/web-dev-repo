@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <title>My Personal Portfolio</title>
+</head>
+<body>
+
+    <header>
+        <h1>Yugansh Gupta</h1>        
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I am a student at Bosscoder School of Technology. I have a keen interest in technology and exploring new things.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>Java</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            
+            <article>
+                <h3>Task Management Web App</h3>
+                <p>A productivity application that allows users to create and track daily tasks in real-time.</p>
+            </article>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            
+            <article>
+                <h3>B Tech. CSE and AIML</h3>
+                <p>Bosscoder School of Technology | 2026 - 2030</p>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Yugansh Gupta. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
