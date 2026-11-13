@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #333;
+}
+
+/* Flexbox is useful for arranging items in one row. */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 18px 6%;
+    background: #263b5e;
+    color: white;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.header nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+/* CSS Grid is useful for rows and columns together. */
+main {
+    max-width: 1000px;
+    margin: 25px auto;
+    padding: 0 20px;
+}
+
+.about, #work {
+    padding: 22px;
+    margin-bottom: 20px;
+    background: white;
+    border-radius: 8px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.card {
+    padding: 20px;
+    background: #e3eaf3;
+    border-radius: 8px;
+}
+
+footer {
+    padding: 18px;
+    text-align: center;
+    color: white;
+    background: #1b293f;
+}
+
+@media (max-width: 550px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
